@@ -13,3 +13,7 @@ void Account::addCredit_card(Credit_card* credit_card)
 	this->credit_card = credit_card;
 
 }
+void Account::addOrder(Order* order)
+{
+	orders.push_back(order);
+}

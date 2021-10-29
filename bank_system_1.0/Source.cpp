@@ -11,14 +11,14 @@ int main()
 	// Создаем Докторов вне области видимости класса Patient
 	User* d1 = new User("John", "DD", "18");
 	
-	Account* a1 = new Account(200, 100);
+	Account a1(200, 100);
 	d1->addAdministrator(p1);
 	/*d1->addAccount(r);*/
-	a1->addCredit_card(c1);
+	a1.addCredit_card(c1);
 
 	c1->addOrder(v1);
 	p1->addUser_credit_card(c1);
-
+	d1->addAccount(a1);
 	delete p1;
 	
 

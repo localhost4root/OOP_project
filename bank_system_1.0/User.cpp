@@ -8,12 +8,12 @@ void User::addAdministrator(Administrator* administrator)
 	administrators.push_back(administrator);
 	administrator->addUser(this);
 }
-//void User::addAccount(Account account)
-//{
-//	accounts.push_back(account);
-//}
+void User::addOrder(Order* order)
+{
+    orders.push_back(order);
+}
+void User::addAccount(Account account)
+{
+	accounts.push_back(account);
+}
 
-//void User::setOrder(Order* order)
-//{
-//	orders.push_back(order);
-//}
