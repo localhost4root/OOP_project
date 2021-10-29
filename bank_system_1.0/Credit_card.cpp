@@ -22,3 +22,10 @@ void Credit_card::blockCC()
 	}
 	
 }
+bool Credit_card::checkCC()
+{
+	if (balance > limit)
+		return true;
+	else
+		return false;
+}

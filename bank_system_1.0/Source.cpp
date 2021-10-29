@@ -43,13 +43,14 @@ int main()
 	u1->addAccount(a2);
 	u1->addOrder(o1);
 	o1->set_Credit_card(c1);
-	
+	u1->addAdministrator(p1);
 	
 	/*d1->addAccount(r);*/
-	a1.addCredit_card(c1);
+
 
 	
 	p1->addUser_credit_card(c1);
+	p1->addUser_credit_card(c2);
 	
 	while (choose1)
 	{
@@ -107,26 +108,20 @@ int main()
 				cout << "1 - to check user CC " << endl << "2 - dump data into file " << endl << "3 - to open bank account for the user " << endl << "0 - to exit" << endl;
 				cin >> choose2;
 				cout << endl << endl;
-				int  index_0 = 0;
-				double sum_0;
+				
 				switch (choose2)
 				{
 				case RETURN_TO_MAIN_1:
 					choose2 = 0;
 					break;
 				case CHECK_CC:
-					
+					p1->checkUserCC();
 					break;
 				case DUMP_DATA_INTO_FILE:
-					
+					u1->dumpData();
 					break;
 				case OPEN_ACCOUNT:
-					cout << "Input id of bank account: " << endl;
-					cin >> index_0;
-					cout << "Input sum of money which the customer has put on the account: ";
-					cin >> sum_0;
-					
-
+					p1->createAccount_for_user(0);
 					break;
 				}
 			}

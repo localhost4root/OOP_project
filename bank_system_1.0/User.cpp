@@ -32,19 +32,19 @@ void User::dumpData()
 		i++;
 	}
 	DATA.close();
-	cout << "Successfully dumped!";
+	cout << "Successfully dumped!" << endl;
 }
 void User::payFromOneAccount_ToOther(int number_of_sender, int number_of_recipient, double sum)
 {
 	if (accounts[number_of_sender-1].getMyBalance() - sum < 0)
 	{
-		cout << "Not enough money!";
+		cout << "Not enough money!" << endl;
 	}
 	else
 	{
 		accounts[number_of_sender-1].withdraw_money(sum);
 		accounts[number_of_recipient-1].add_money(sum);
-		cout << "Succesfully paid!";
+		cout << "Succesfully paid!" << endl;
 	}
 
 	

@@ -20,7 +20,7 @@ public:
 	void addOrder(Order* order);
 	void addAccount(Account* account);
 	void blockCC();
-	
+	bool checkCC();
 	friend class Order;
 	friend class Account;
 };

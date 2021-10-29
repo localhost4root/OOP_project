@@ -14,7 +14,8 @@ public:
 	Administrator(string name, string surname, string identification_number) : Person(name, surname, identification_number)
 	{		};
 	void addUser_credit_card(Credit_card* credit_card);
-	
+	void checkUserCC();
+	void createAccount_for_user(int user_number);
 	friend class User;
 	friend class Credit_card;
 };
