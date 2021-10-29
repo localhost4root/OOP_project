@@ -19,6 +19,8 @@ public:
 
 	void addOrder(Order* order);
 	void addAccount(Account* account);
+	void blockCC();
+	
 	friend class Order;
 	friend class Account;
 };

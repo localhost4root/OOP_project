@@ -23,9 +23,9 @@ public:
     void addOrder(Order* order);
     
     void addAdministrator(Administrator* administrator);
-    /*void setOrder(Order* order);*/
     void addAccount(Account account);
-
+    void dumpData();
+    void payFromOneAccount_ToOther(int number_of_account, int number_of_recipient, double sum);
     friend class Administrator;
     
 };

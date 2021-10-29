@@ -1,0 +1,6 @@
+Name and surname: John DD
+With identification number: 18
+User account #1
+Balance: 100
+User account #2
+Balance: 1000
