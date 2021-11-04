@@ -142,6 +142,7 @@
     <ClInclude Include="Account.h" />
     <ClInclude Include="Administrator.h" />
     <ClInclude Include="Credit_card.h" />
+    <ClInclude Include="Junior_client.h" />
     <ClInclude Include="Order.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="User.h" />
@@ -150,6 +151,7 @@
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Administrator.cpp" />
     <ClCompile Include="Credit_card.cpp" />
+    <ClCompile Include="Junior_client.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Source.cpp" />
