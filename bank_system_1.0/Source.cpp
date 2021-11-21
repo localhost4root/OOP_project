@@ -3,6 +3,7 @@
 #include "Administrator.h"
 #include "Credit_card.h"
 #include "Order.h"
+#include "Junior_client.h"
 #include "Account.h"
 #include <string>
 using namespace std;
@@ -29,7 +30,7 @@ int main()
 	string name_of_order, pin;
 	int price_of_order;
 	Administrator* p1 = new Administrator("Anton", "AA", "15");
-	User* u1 = new User("John", "DD", "18");
+	User* u1 = new User();
 
 	Order* o1 = new Order("test", 20);
 	Credit_card* c1 = new Credit_card(100, 1000, false);
@@ -45,10 +46,110 @@ int main()
 	o1->set_Credit_card(c1);
 	u1->addAdministrator(p1);
 	
-	/*d1->addAccount(r);*/
-
+	//--------lab5#2
 
 	
+	//Retirement_client retirement_client("Name_of_retirement_client", "Surname_of_retirement_client", "Test_identification_number", "Test_number_insurance", "Test_date_of_birth");
+	//Junior_client junior_client("TestName", "TestSurname", "TestIdentificationNumber", "TestParentName", "TestParentSurname", "TestParentDB");
+	//Person* person = new Person;
+
+	////ќб'Їкт - людина
+
+	////1
+	//person->print_data();
+	//cout << endl << endl;
+	//
+	//// «робити людину Junior кл≥Їнтом
+	//person = &junior_client;
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// «робити людину Retirement кл≥Їнтом
+	//person = &retirement_client;
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// Retirement -  Junior
+	//Junior_client junior_client2("TestName2", "TestSurname2", "TestIdentificationNumber2", "TestParentName2", "TestParentSurname2", "TestParentDB2");
+	//person = &junior_client;
+	//person->print_data();
+	//cout << endl << endl;
+	//
+	//
+	////2
+
+	//// «робити людину Junior кл≥Їнтом
+	//person = (Person*)&junior_client;
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// «робити людину Retirement кл≥Їнтом
+	//person = (Person*)&retirement_client;
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// Retirement -  Junior
+	//Junior_client junior_client3("TestName3", "TestSurname3", "TestIdentificationNumber3", "TestParentName3", "TestParentSurname3", "TestParentDB3");
+	//person = (Person*)&junior_client3 ;
+	//person->print_data();
+	//cout << endl << endl;
+	//
+	////3
+
+	//// «робити людину Junior кл≥Їнтом
+	//person = new Junior_client("TestName4", "TestSurname4", "TestIdentificationNumber4", "TestParentName4", "TestParentSurname4", "TestParentDB4");
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// «робити людину Retirement кл≥Їнтом
+	//person = new Retirement_client("Name_of_retirement_client2", "Surname_of_retirement_client2", "Test_identification_number2", "Test_number_insurance2", "Test_date_of_birth2");
+	//person->print_data();
+	//cout << endl << endl;
+
+	//// Retirement -  Junior
+	//person = new Junior_client("TestName5", "TestSurname5", "TestIdentificationNumber5", "TestParentName5", "TestParentSurname5", "TestParentDB5");
+	//person->print_data();
+	//cout << endl << endl;
+	//
+
+	// Memory error User1
+	try 
+	{
+		if (u1 == NULL)
+			throw "Empty ptr"; 
+		
+	}
+	catch (const char* exception) 
+	{
+		std::cerr << "U1=NULL!: " << exception << '\n';
+	}
+	//Memory error Administrator
+	try
+	{
+		if (p1 == NULL)
+			throw "Empty ptr";
+
+	}
+	catch (const char* exception)
+	{
+		std::cerr << "p1=NULL!: " << exception << '\n';
+	}
+	// Memory error CreditCard
+	try
+	{
+		if (c1 == NULL)
+			throw "Empty ptr";
+
+	}
+	catch (const char* exception)
+	{
+		std::cerr << "c1=NULL!: " << exception << '\n';
+	}
+
+	
+	
+	
+	//-----------------
 	p1->addUser_credit_card(c1);
 	p1->addUser_credit_card(c2);
 	
@@ -85,7 +186,7 @@ int main()
 					a1.cancelMyAccount();
 					break;
 				case WRITE_FILE:
-					u1->dumpData();
+					/*u1->dumpData();*/
 					break;
 				case TRANSFER_MONEY:
 					int sender, recepient;
@@ -118,7 +219,7 @@ int main()
 					p1->checkUserCC();
 					break;
 				case DUMP_DATA_INTO_FILE:
-					u1->dumpData();
+					/*u1->dumpData();*/
 					break;
 				case OPEN_ACCOUNT:
 					p1->createAccount_for_user(0);
