@@ -24,6 +24,18 @@ enum adminChoose {
 	DUMP_DATA_INTO_FILE = 2,
 	OPEN_ACCOUNT = 3
 };
+//4
+template <class D> void check_max(D a, D b)
+{
+	if (a > b)
+		cout << "First max" << endl;
+	else if (a<b)
+		cout << "Second max" << endl;
+	else
+		cout << "First = second" << endl;
+	
+}
+
 int main()
 {
 	int choose1 = 1, choose2 = 1;
@@ -35,6 +47,8 @@ int main()
 	Order* o1 = new Order("test", 20);
 	Credit_card* c1 = new Credit_card(100, 1000, false);
 	Credit_card* c2 = new Credit_card(1000, 500, false);
+	Credit_card c3(100, 1000, false);
+	Credit_card c4(500, 1000, false);
 	Account a1(1);
 	Account a2(2);
 	
@@ -153,6 +167,33 @@ int main()
 	p1->addUser_credit_card(c1);
 	p1->addUser_credit_card(c2);
 	
+	
+	//1
+	std::cout << c3 << endl;
+	std::cout << ++c3 << endl;
+	std::cout << c3++ << endl;
+	std::cout << c3 << endl;
+	std::cout << --c3 << endl;
+	std::cout << c3-- << endl;
+	std::cout << c3 << endl;
+	//2
+	Credit_card c5 = c3 + c4;
+	std::cout << c5 << endl;
+	//3
+	c3 += c4;
+	
+	std::cout << endl <<endl << c3 << endl;
+	std::cout << endl << endl << c4 << endl;
+	c3 *= c4;
+	std::cout << c3 << endl;
+
+	c3 -= c5;
+	std::cout << c3 << endl;
+
+
+	//4
+	check_max(a1.getMyBalance(), a2.getMyBalance());
+
 	while (choose1)
 	{
 		cout << "1 - to login as a user " << endl << "2 - to login as a administrator " << endl << "0 - to exit" << endl;

@@ -1,10 +1,5 @@
-﻿  Account.cpp
-  Administrator.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Administrator.cpp(15,11): warning C4018: <: несоответствие типов со знаком и без знака
-  Credit_card.cpp
-  Order.cpp
-  Source.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(31,6): warning C4101: price_of_order: неиспользованная локальная переменная
+﻿  Source.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(43,6): warning C4101: price_of_order: неиспользованная локальная переменная
   User.cpp
   Создание кода...
   bank_system_1.0.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\Debug\bank_system_1.0.exe

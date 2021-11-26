@@ -29,3 +29,74 @@ bool Credit_card::checkCC()
 	else
 		return false;
 }
+std::ostream& operator<< (std::ostream& out, const Credit_card& n)
+{
+	out << n.balance;
+	return out;
+}
+Credit_card& Credit_card::operator++()
+{
+	balance+=100;
+	return *this;
+}
+
+Credit_card& Credit_card::operator--()
+{
+	balance-=100;
+	return *this;
+}
+Credit_card Credit_card::operator++(int)
+{
+	Credit_card temp(balance);
+	++(*this);
+	return temp;
+}
+
+Credit_card Credit_card::operator--(int)
+{
+	Credit_card temp(balance);
+	--(*this); 
+	return temp;
+}
+
+Credit_card operator+(const Credit_card& d1, const Credit_card& d2)
+{
+	
+	return Credit_card(d1.balance + d2.balance);
+}
+
+Credit_card operator-(const Credit_card& d1, const Credit_card& d2)
+{
+	
+	return Credit_card(d1.balance - d2.balance);
+}
+
+
+
+
+Credit_card operator*(const Credit_card& d1, const Credit_card& d2)
+{
+
+	return Credit_card(d1.balance * d2.balance);
+}
+
+Order*& Credit_card::operator[] (const int index)
+{
+	return orders[index];
+}
+
+Credit_card& Credit_card::operator += (Credit_card c2)
+{
+	balance += c2.balance;
+	return *this;
+}
+Credit_card& Credit_card::operator -= (Credit_card c2)
+{
+	balance -= c2.balance;
+	return *this;
+}
+Credit_card& Credit_card::operator *= (Credit_card c2)
+{
+	balance *= c2.balance;
+	return *this;
+}
