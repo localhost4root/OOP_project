@@ -49,11 +49,11 @@ int main()
 	//--------lab5#2
 
 	
-	//Retirement_client retirement_client("Name_of_retirement_client", "Surname_of_retirement_client", "Test_identification_number", "Test_number_insurance", "Test_date_of_birth");
-	//Junior_client junior_client("TestName", "TestSurname", "TestIdentificationNumber", "TestParentName", "TestParentSurname", "TestParentDB");
-	//Person* person = new Person;
+	Retirement_client retirement_client("Name_of_retirement_client", "Surname_of_retirement_client", "Test_identification_number", "Test_number_insurance", "Test_date_of_birth");
+	Junior_client junior_client("TestName", "TestSurname", "TestIdentificationNumber", "TestParentName", "TestParentSurname", "TestParentDB");
+	Person* person = new Person;
 
-	////ќб'Їкт - людина
+	//ќб'Їкт - людина
 
 	////1
 	//person->print_data();
@@ -110,7 +110,7 @@ int main()
 	//person = new Junior_client("TestName5", "TestSurname5", "TestIdentificationNumber5", "TestParentName5", "TestParentSurname5", "TestParentDB5");
 	//person->print_data();
 	//cout << endl << endl;
-	//
+	
 
 	// Memory error User1
 	try 

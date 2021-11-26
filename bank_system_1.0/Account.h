@@ -19,6 +19,7 @@ public:
 	void cancelMyAccount();
 	double getMyBalance();
 	void withdraw_money(double money);
+	
 	void add_money(double money);
 	friend class Credit_card;
 

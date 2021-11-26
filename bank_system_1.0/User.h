@@ -11,12 +11,12 @@ using namespace std;
 class Administrator;
 class Order;
 class Account;
-//class Junior_client;
-//class Retirement_client;
+class Junior_client;
+class Retirement_client;
 class User  
 {
-    /*Junior_client client_j;
-    Retirement_client client_r;*/
+    Junior_client client_j;
+    Retirement_client client_r;
     vector<Administrator*> administrators;
     vector<Order*>orders;
     vector<Account>accounts;
@@ -24,7 +24,7 @@ class User
 public:
     User() 
     {
-       /* int tmp;
+        int tmp;
         cout << "Input 1- to add information about junior user" <<endl << "Input 2- to add information about retirement user" << endl;
         cin >> tmp;
         if (tmp == 1)
@@ -46,7 +46,7 @@ public:
         }
         else {
             cout << "Uncorrect input";
-        }*/
+        }
     };
     
     virtual ~User()
