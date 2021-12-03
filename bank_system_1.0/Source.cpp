@@ -64,7 +64,7 @@ int main()
 
 	
 	Retirement_client retirement_client("Name_of_retirement_client", "Surname_of_retirement_client", "Test_identification_number", "Test_number_insurance", "Test_date_of_birth");
-	Junior_client junior_client("TestName", "TestSurname", "TestIdentificationNumber", "TestParentName", "TestParentSurname", "TestParentDB");
+	Junior_client <string, string, string> junior_client("TestName", "TestSurname", "TestIdentificationNumber", "TestParentName", "TestParentSurname", "TestParentDB");
 	Person* person = new Person;
 
 	//ќб'Їкт - людина

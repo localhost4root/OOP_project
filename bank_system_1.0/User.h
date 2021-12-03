@@ -11,11 +11,13 @@ using namespace std;
 class Administrator;
 class Order;
 class Account;
+template<typename T, typename A, typename B>
+
 class Junior_client;
 class Retirement_client;
 class User  
 {
-    Junior_client client_j;
+    Junior_client<string, string, string> client_j;
     Retirement_client client_r;
     vector<Administrator*> administrators;
     vector<Order*>orders;
