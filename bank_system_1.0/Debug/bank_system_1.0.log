@@ -1,14 +1,5 @@
-﻿  Account.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Account.cpp(27,31): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Account.cpp(31,31): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
-  Administrator.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Administrator.cpp(15,11): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Administrator.cpp(38,40): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-  Credit_card.cpp
-  Junior_client.cpp
-  Order.cpp
-  Source.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(43,6): warning C4101: price_of_order: неиспользованная локальная переменная
-  User.cpp
-  Создание кода...
+﻿  Source.cpp
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(212,14): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(246,19): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(47,6): warning C4101: price_of_order: неиспользованная локальная переменная
   bank_system_1.0.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\Debug\bank_system_1.0.exe

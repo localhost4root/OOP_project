@@ -80,10 +80,7 @@ Credit_card operator*(const Credit_card& d1, const Credit_card& d2)
 	return Credit_card(d1.balance * d2.balance);
 }
 
-Order*& Credit_card::operator[] (const int index)
-{
-	return orders[index];
-}
+
 
 Credit_card& Credit_card::operator += (Credit_card c2)
 {

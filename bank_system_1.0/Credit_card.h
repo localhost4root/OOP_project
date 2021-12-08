@@ -45,9 +45,8 @@ public:
 	Credit_card& operator += (Credit_card c2);
 	Credit_card& operator -= (Credit_card c2);
 	Credit_card& operator *= (Credit_card c2);
-	Order*& operator[] (const int index);
+	
 
-	//4
-
+	
 };
 

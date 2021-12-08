@@ -6,7 +6,14 @@
 #include "Junior_client.h"
 #include "Retirement_client.h"
 #include <vector>
+#include <list>
+#include <deque>
 #include <iostream>
+#include <set>
+#include <map>
+#include <stack>
+#include <queue>
+
 using namespace std;
 class Administrator;
 class Order;
@@ -21,7 +28,10 @@ class User
     Retirement_client client_r;
     vector<Administrator*> administrators;
     vector<Order*>orders;
+
     vector<Account>accounts;
+    
+
 
 public:
     User() 
