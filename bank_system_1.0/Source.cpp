@@ -27,7 +27,158 @@ enum adminChoose {
 	DUMP_DATA_INTO_FILE = 2,
 	OPEN_ACCOUNT = 3
 };
-//4
+//4.1
+class functor_plus
+{
+	int sum;
+public:
+	int operator ()(const int a, const int b)
+	{return a + b;}
+};
+
+class functor_addition
+{
+	int addition;
+public:
+	int operator ()(const int a, const int b)
+	{return a - b;}
+};
+
+class functor_times
+{
+	int times;
+public:
+	int operator ()(const int a, const int b)
+	{return a * b;}
+};
+
+class functor_modulus
+{
+	int modulus;
+public:
+	int operator ()(const int a, const int b)
+	{return a % b;}
+};
+
+class functor_negate
+{
+	int negate;
+public:
+	int operator ()(const int a)
+	{return -a;}
+};
+
+class functor_divides
+{
+	int divides;
+public:
+	int operator ()(const int a, const int b)
+	{return a / b;}
+};
+//4.2
+
+class functor_equal_to
+{
+	bool equal_to;
+public:
+	bool operator ()(const int a, const int b)
+	{return a == b;}
+};
+
+class functor_not_equal_to
+{
+	bool not_equal_to;
+public:
+	bool operator ()(const int a, const int b)
+	{return a != b;}
+};
+
+class functor_greater
+{
+	bool greater;
+public:
+	bool operator ()(const int a, const int b)
+	{return a > b;}
+};
+
+class functor_less
+{
+	bool less;
+public:
+	bool operator ()( int a,  int b)
+	{return a < b;}
+};
+
+class functor_greater_equal
+{
+	bool greater_equal;
+public:
+	bool operator ()( int a,  int b)
+	{
+		if (a >= b)
+		{
+			greater_equal = true;
+			return true;
+		}
+		else
+			greater_equal = false;
+			return false;
+	}
+};
+
+class functor_less_equal
+{
+	bool less_equal;
+public:
+	bool operator ()(int a, int b)
+	{
+		if (a <= b)
+		{
+			less_equal = true;
+			return true;
+		}
+		else
+			less_equal = false;
+		return false;
+	}
+};
+//4.3
+
+
+class functor_logical_and
+{
+	bool logical_and;
+public:
+	bool operator ()(int a, int b)
+	{
+		if (a && b)
+		{
+			logical_and = true;
+			return true;
+		}
+		else
+			logical_and = false;
+		return false;
+	}
+};
+
+class functor_logical_or
+{
+	bool logical_or;
+public:
+	bool operator ()(int a, int b)
+	{
+		if (a || b)
+		{
+			logical_or = true;
+			return true;
+		}
+		else
+			logical_or = false;
+		return false;
+	}
+};
+
 template <class D> void check_max(D a, D b)
 {
 	if (a > b)
@@ -216,9 +367,8 @@ int main()
 	}
 	iter1_end++;
 	(iter1_end--)->get_number_of_account();
-	//algoritms
-	sort(accounts.begin(), accounts.end());
-	accounts.erase(accounts.begin());
+	
+
 	//reverse(iter1_start, iter1_end);
 	
 	//list
@@ -232,6 +382,7 @@ int main()
 	iter1list_start++;
 	(iter1list_end++);
 	/*!!!!iter1list_start += 2;*/
+	
 
 	//deque
 	deque<Account> deque_accounts;
@@ -321,8 +472,25 @@ int main()
 	//iterator4priority_queue
 	//-----------
 
+
+
+	//Task 3, 5 algoritms
+	//algoritms
+	std::list<Account>::const_iterator it;
+	std::list<Account>::const_iterator it1;
+	std::set<Account>::const_iterator it2;
+	it = min_element(list_accounts.begin(), list_accounts.end());
+	sort(accounts.begin(), accounts.end());
+	reverse(deque_accounts.begin(), deque_accounts.end());
+	it1 = find(list_accounts.begin(), list_accounts.end(), 2);
+	it2 = min_element(set_accounts.begin(), set_accounts.end());
+
+	functor_logical_or f1;
+	bool test = f1(5, 7);
+	
 	while (choose1)
 	{
+		cout << endl;
 		cout << "1 - to login as a user " << endl << "2 - to login as a administrator " << endl << "0 - to exit" << endl;
 		cin >> choose1;
 		cout << endl << endl;

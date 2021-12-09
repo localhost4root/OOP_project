@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(212,14): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(246,19): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
-C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(47,6): warning C4101: price_of_order: неиспользованная локальная переменная
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(363,14): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(397,19): warning C4834: отмена возвращаемого значения функции с атрибутом "nodiscard"
+C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\bank_system_1.0\Source.cpp(198,6): warning C4101: price_of_order: неиспользованная локальная переменная
   bank_system_1.0.vcxproj -> C:\Users\Voitsehovskuy-PC\source\repos\bank_system_1.0\Debug\bank_system_1.0.exe
